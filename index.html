@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="settings_for_header">
+            <div class="header_logo">
+                <a href="#!">
+                    <picture>
+                        <source srcset="imag/Logo_375.svg" media="(max-width:767px)">
+                        <img src="imag/Logo.svg" alt="logo">
+                    </picture>
+                </a>
+            </div>
+            <div class="Localise_and_contacts">
+                <div class="item-2">
+                    <div class="area">
+                        <a href="#!" class="local">
+                            УК
+                        </a>
+                    </div>
+                    <div class="area">
+                        <a href="#!" class="local">
+                            РУ
+                        </a>
+                    </div>
+                    <div class="area">
+                        <a href="#!" class="local">
+                            EN
+                        </a>
+                    </div>
+                </div>
+                <div class="dot"></div>
+                <div class="item-1">
+                    <p class="adres">
+                        Kyiv, Mechnikova str., 14/1
+                    </p>
+                </div>
+                <div class="dot"></div>
+                <div class="item">
+                    <a href="#!" class="number">
+                         0800 211 927
+                    </a>
+                </div>
+                <div class="dot"></div>
+                <div class="item-1">
+                    <a href="#!">
+                        <!-- <img src="imag/logo_facebook.svg" alt="logo_facebook"> -->
+                        <svg class="hover_facebook_logo" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+                        </svg>  
+                    </a>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="menu">
+                    <ul id="burgerActiv" class="menu_nav">
+                        <li class="item-menu">
+                            <a href="pages/about_page.html" target="_blank" class="decor-item-menu">
+                                about us
+                            </a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="#!" class="decor-item-menu">
+                                services
+                            </a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="#!" class="decor-item-menu">
+                                team
+                            </a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="#!" class="decor-item-menu">
+                                publications
+                            </a>
+                        </li>
+                        <li class="item-menu">
+                            <p href="#!" id="modal_button" class="decor-item-menu">
+                                contact
+                            </p>
+                        </li>
+                        <li id="closeMobileMenu" class="close_mobile_menu">
+                            <p class="close_text">
+                                close
+                            </p>
+                        </li>
+                    </ul>
+                    <div id="burger" class="menu-burger">
+                        <img src="imag/Hamburger.svg" alt="burger">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="script/script_burger.js"></script>
+    <div id="modal" class="pop_up">
+        <div class="pop_up_area">
+            <div class="pop_up_logo">
+                <p class="pop_up_logo_text">
+                    We would like to help you
+                </p>
+                <svg id="close" class="close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="##F5F5FA"/>
+                    <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                    <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                </svg>
+            </div>
+            <input placeholder="Name" class="pop_input" type="text">
+            <textarea placeholder="Message" class="pop_input"></textarea>
+            <p class="small_text_pop_up">
+                How to answer you?
+            </p>
+            <input placeholder="Phone number" class="pop_input" type="number">
+            <input placeholder="Email" class="pop_input" type="email">
+            <div class="send_button">Send message</div>
+        </div>
+    </div>
+    <script src="script/script_pop_up.js"></script>
+    <main>
+        <div class="background_1">
+            <div class="fixing_tool_h">
+                <picture>
+                    <source srcset="imag/Symbol_375.png" media="(max-width:767px)">
+                    <source srcset="imag/Symbol_768.png" media="(max-width:1023px)">
+                    <img class="img_header-main" src="imag/Symbol.svg" alt="h">
+                </picture>
+                <div class="block_on_h">
+                    <p class="text_on_h">
+                        you legal solutions provider
+                    </p> 
+                </div>
+                <div class="block_on_h_img">
+                    <!-- <img class="hover_scrol" src="imag/Scroll.svg" alt="scrol"> -->
+                    <svg class="hover_scrol" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_22728_11353)">
+                        <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
+                        <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_22728_11353">
+                        <rect width="42" height="42" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="Consistent">
+                <div class="settings_consistent">
+                    <a href="#!" class="Consistent_menu">
+                        Consistent
+                    </a>
+                    <a href="#!" class="Consistent_menu">
+                        Customer&nbsp;oriented
+                    </a>
+                    <a href="#!" class="Consistent_menu">
+                        Innovative
+                    </a>
+                    <a href="#!" class="Consistent_menu">
+                        Business&nbsp;oriented
+                    </a>
+                </div>
+                <hr class="hr" >
+                <div>
+                    <h2 class="idea_of_service" >
+                        We turn the idea of legal services
+                    </h2>
+                    <p class="text_afte_idea_of_service" >
+                        Consolidating many years of experience and&nbsp;practice, the company's lawyers accompany 
+                        complex projects and&nbsp;achieve a number&nbsp;of important decisions for the industry. 
+                        Many&nbsp;of them&nbsp;form the practice of&nbsp;applying the law of the sea&nbsp;in&nbsp;Ukraine.
+                    </p>
+                </div>
+            </div>
+            <div class="service_vector">
+                <div class="service">
+                    <p class="service_text">
+                        services
+                    </p>
+                    <!-- <img class="vector" src="imag/Vector 2.svg" alt="vector"> -->
+                    <svg class="vector" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="we_can">
+                    <p>
+                        What can we do better than others?
+                    </p>
+                </div>
+                <div class="fix_card ">
+                    <div class="withe_block">
+                        <img class="icon" src="imag/Ecommerce.svg" alt="Ecommerce">
+                    </div>
+                    <p class="title_after_withe">
+                        IT and e-commerce
+                    </p>
+                    <p class="small_text_after_withe">
+                        An endless stream of contracts, tax issues, labor relations, 
+                        corporate papers - legal work distracts you from doing 
+                        business.&nbsp;But there is not much work to&nbsp;do to hire an in-
+                        house lawyer.
+                    </p>
+                </div>
+                <div class="fix_card ">
+                    <div class="withe_block">
+                        <img class="icon" src="imag/Support.svg" alt="Ecommerce">
+                    </div>
+                    <p class="title_after_withe">
+                        Comprehensive daily <br> legal support
+                    </p>
+                    <p class="small_text_after_withe">
+                        In addition, over time, the work will become the same type 
+                        and uninteresting for a full-time lawyer. And&nbsp;we know very 
+                        well how difficult it is to find a good candidate with 
+                        experience&nbsp;in the field of information technology in Ukraine.
+                    </p>
+                </div>
+                <div class="fix_card ">
+                    <div class="withe_block">
+                        <img class="icon" src="imag/Vector.svg" alt="Ecommerce">
+                    </div>
+                    <p class="title_after_withe">
+                        Structuring corporate relationships
+                    </p>
+                    <p class="small_text_after_withe">
+                        Instead of just providing legal services, we will hire a lawyer or 
+                        a whole team that will fit into the daily life of your company.
+                    </p>
+                </div>
+                <div class="fix_card ">
+                    <div class="withe_block">
+                        <img class="icon" src="imag/Trust.svg" alt="Ecommerce">
+                    </div>
+                    <p class="title_after_withe">
+                        Building contractual relations
+                    </p>
+                    <p class="small_text_after_withe">
+                        Once a week, or week after month, you have your own lawyer 
+                        by your side. Anyone in the company can catch it at the 
+                        coffee maker and just talk about current affairs instead of 
+                        waiting for update status.
+                    </p>
+                </div>
+                <div class="fix_card ">
+                    <div class="withe_block">
+                        <img class="icon" src="imag/Protection.svg" alt="Ecommerce">
+                    </div>
+                    <p class="title_after_withe">
+                        Protection of business, intellectual property
+                    </p>
+                    <p class="small_text_after_withe">
+                        And all the other time he will work on new diverse&nbsp;projects, 
+                        so he will definitely not stop in professional development. 
+                        One way or another, all Axon Partners&nbsp;will work for you 
+                        instead of a corporate lawyer.
+                    </p>
+                </div>
+                <div class="fix_card ">
+                    <div class="withe_block">
+                        <img class="icon" src="imag/Court.svg" alt="Ecommerce">
+                    </div>
+                    <p class="title_after_withe">
+                        Judicial representation
+                    </p>
+                    <p class="small_text_after_withe">
+                        Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="background_2">
+            <div class="small_background_1">
+                <!-- it`s clear -->
+            </div>
+            <div class="small_background_2">
+                <!-- it`s clear -->
+            </div>
+            <div class="swiper_area">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_area">
+                            <picture>
+                                <source srcset="imag/man_375.png" media="(max-width:767px)">
+                                <source srcset="imag/man_768.png" media="(max-width:1023px)">
+                                <source srcset="imag/man_1024.png" media="(max-width:1439px)">
+                                <source srcset="imag/man_1440.png" media="(max-width:1919px)">
+                                <img class="img_man" src="imag/image.svg" alt="man">
+                            </picture>
+                            <div class="team_text">
+                                <div class="team_small_block">
+                                    <p class="team">
+                                        команда
+                                    </p>
+                                    <!-- <img class="vector" src="imag/Vector 2.svg" alt="vector"> -->
+                                    <svg class="vector" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <p class="team_block_after">
+                                    Ми звикли брати&nbsp;на себе відповідальність та завжди 
+                                    гарантуємо чесну, вчасну допомогу, навіть у 
+                                    ситуаціях,&nbsp;коли більшість безсилі.
+                                </p>
+                                <p class="text_name">
+                                    Олександр Олександровський
+                                </p>
+                                <P class="text_after_name">
+                                    Керуючий партнер
+                                </P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_area">
+                            <picture>
+                                <source srcset="imag/man_375.png" media="(max-width:767px)">
+                                <source srcset="imag/man_768.png" media="(max-width:1023px)">
+                                <source srcset="imag/man_1024.png" media="(max-width:1439px)">
+                                <source srcset="imag/man_1440.png" media="(max-width:1919px)">
+                                <img class="img_man" src="imag/image.svg" alt="man">
+                            </picture>
+                            <div class="team_text">
+                                <div class="team_small_block">
+                                    <p class="team">
+                                        команда
+                                    </p>
+                                    <!-- <img class="vector" src="imag/Vector 2.svg" alt="vector"> -->
+                                    <svg class="vector" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <p class="team_block_after">
+                                    Ми звикли брати&nbsp;на себе відповідальність та завжди 
+                                    гарантуємо чесну, вчасну допомогу, навіть у 
+                                    ситуаціях,&nbsp;коли більшість безсилі.
+                                </p>
+                                <p class="text_name">
+                                    Олександр Олександровський
+                                </p>
+                                <P class="text_after_name">
+                                    Керуючий партнер
+                                </P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_area">
+                            <picture>
+                                <source srcset="imag/man_375.png" media="(max-width:767px)">
+                                <source srcset="imag/man_768.png" media="(max-width:1023px)">
+                                <source srcset="imag/man_1024.png" media="(max-width:1439px)">
+                                <source srcset="imag/man_1440.png" media="(max-width:1919px)">
+                                <img class="img_man" src="imag/image.svg" alt="man">
+                            </picture>
+                            <div class="team_text">
+                                <div class="team_small_block">
+                                    <p class="team">
+                                        команда
+                                    </p>
+                                    <!-- <img class="vector" src="imag/Vector 2.svg" alt="vector"> -->
+                                    <svg class="vector" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <p class="team_block_after">
+                                    Ми звикли брати&nbsp;на себе відповідальність та завжди 
+                                    гарантуємо чесну, вчасну допомогу, навіть у 
+                                    ситуаціях,&nbsp;коли більшість безсилі.
+                                </p>
+                                <p class="text_name">
+                                    Олександр Олександровський
+                                </p>
+                                <P class="text_after_name">
+                                    Керуючий партнер
+                                </P>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 30,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    });
+                </script>
+            </div>
+            <p class="text_befor_logo_block">
+                They already trust us
+            </p>
+            <div class="logo_boxes">
+                <div class="box">
+                    <img src="imag/Hillel-Logo-OneLine-White-Uk.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/image_2.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/logo 1.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/retina_2.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/Frame 6.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/Frame 7.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/logo 2.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/ecolease.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/Logo 4.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/icon-logo 1.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/logo_5.svg" alt="logo">
+                </div>
+                <div class="box">
+                    <img src="imag/logoM.svg" alt="logo">
+                </div>
+            </div>
+        </div>
+        <div class="background_3 fix_size">
+            <div class="team_small_block ">
+                <p class="team for_animation">
+                    Publications
+                </p>
+                <!-- <img class="vector" src="imag/Vector 2.svg" alt="vector"> -->
+                <svg class="vector for_animation" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
+                </svg>
+            </div>
+            <p class="something_tell"> 
+                We have something to tell
+            </p>
+            <div class="card_container">
+                <div class="card">
+                    <picture>
+                        <source srcset="imag/Cover_375.png" media="(max-width:767px)">
+                        <source srcset="imag/Cover_768.png" media="(max-width:1023px)">
+                        <img class="card_img" src="imag/Cover.png" alt="Cover">
+                    </picture>
+                    <p class="card_name">
+                        Equity associate
+                    </p>
+                    <p class="date"> 
+                        April 22
+                    </p>
+                    <hr class="hr_card">
+                    <p class="text_card">
+                        I'm a jun on projects. I am a co&ndash;owner of a law&nbsp;firm. How it 
+                        happened. Before&nbsp;entering my parents told me that if I…
+                    </p>
+                </div>
+                <div class="card">
+                    <picture>
+                        <source srcset="imag/Cover_2_375.png" media="(max-width:767px)">
+                        <source srcset="imag/Cover_2_768.png" media="(max-width:1023px)">
+                        <img class="card_img" src="imag/Cover_2_1920.png" alt="Cover">
+                    </picture>
+                    <p class="card_name">
+                        Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
+                    </p>
+                    <p class="date"> 
+                        September 29
+                    </p>
+                    <hr class="hr_card">
+                    <p class="text_card">
+                        And why the recovery of 50 million euros could be a fateful precedent
+                        According to Mind.ua January 21 National Commission&nbsp;for Data Protection.
+                    </p>
+                </div>
+                <div class="card">
+                    <picture>
+                        <source srcset="imag/Cover_3_375.png" media="(max-width:767px)">
+                        <source srcset="imag/Cover_3_768.png" media="(max-width:1023px)">
+                        <img class="card_img" src="imag/Cover_3_1920.png" alt="Cover">
+                    </picture>
+                    <p class="card_name">
+                        Millennial Testament
+                    </p>
+                    <p class="date"> 
+                        August 19
+                    </p>
+                    <hr class="hr_card">
+                    <p class="text_card">
+                        What and how modern vloggers, opinion leaders and crypto- 
+                        millionaires will&nbsp;inherit A typical legacy of the Ukrainian 
+                        generation X looks like this: an apartment in…
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="background_3 footer_tool">
+            <hr class="hr_footer">
+            <div class="footer_area">
+                <div class="footer_section_area">
+                    <p class="footer_adres">
+                        Kyiv, Mechnikova str, 14/1
+                    </p>
+                    <div class="footer_dot"></div>
+                    <a class="footer_map" href="#!">On map</a>
+                </div>
+                <div class="footer_section_area">
+                    <p>
+                        © 2021 HLEGAL Law company, LLC
+                    </p>
+                </div>
+                <div class="footer_section_area">
+                    <!-- <img class="footer_logo" src="imag/Color_facebook_logo.svg" alt="logo"> -->
+                    <svg class="hover_color_logo_facebook" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
+                        </svg>
+                    <div class="helping_area_contact">    
+                        <div class="footer_dot"></div>
+                        <p class="footer_number">
+                            0800 211 927
+                        </p>
+                        <div class="footer_dot"></div>
+                        <a class="footer_contact" href="#!">contact@forstudy.space</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
